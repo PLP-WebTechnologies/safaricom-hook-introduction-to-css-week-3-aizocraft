@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering CSS Basics: Styling Your First Web Page</title>
+
+    <!-- Internal CSS for styling the page -->
+    <style>
+        /* Part 1: CSS Basics - Selectors, Properties, and Values */
+        
+        /* Element Selector: Change the font size of all headings */
+        h1, h2, h3 {
+            font-size: 36px;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        /* Class Selector: Apply a background color to specific sections */
+        .section {
+            background-color: lightyellow;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px; 
+        }
+
+        /* ID Selector: Add a border to an element with a unique ID */
+        #uniqueElement {
+            border: 3px solid #007BFF;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px; 
+        }
+
+        /* Part 2: Inline, Internal, and External CSS */
+        
+        /* Internal CSS for the body and links */
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Verdana', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling Links */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: darkorange;
+            text-decoration: underline;
+        }
+
+        /* Part 3: Basic Styling Properties */
+        
+        /* Card Styling */
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px; 
+        }
+
+        .card h2 {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card p {
+            font-family: 'Verdana', sans-serif;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Custom styling for paragraphs */
+        p {
+            text-align: justify; /* Justify text for a clean look */
+            margin: 10px 0;
+            font-size: 18px;
+            color: #444;
+        }
+
+        /* Heading (h2) styles */
+        h2 {
+            color: #007BFF;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Part 1: CSS Basics - Selectors, Properties, and Values -->
+    <h1>Welcome to CSS Basics</h1>
+    <p>This is a paragraph demonstrating text styling in CSS. Below you'll see different examples of selectors and properties applied to elements.</p>
+    
+    <div class="section">
+        <h2>Section 1: Styling with Class Selector</h2>
+        <p>This section has a background color applied using a class selector. Notice the padding and margin applied to space out the content.</p>
+    </div>
+    
+    <div id="uniqueElement">
+        <h2>Unique Element</h2>
+        <p>This element has a border applied using an ID selector. It also has padding and margin for spacing.</p>
+    </div>
+
+    <!-- Part 2: Inline CSS Example -->
+    <p style="color: darkred; font-weight: bold;">This text is styled using inline CSS to make it bold and dark red.</p>
+
+    <!-- Part 3: Basic Styling Properties - Card Component -->
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>This is a description of the card component. It showcases the application of padding, margins, background color, and border radius for a clean, modern look.</p>
+    </div>
+
+    <!-- External Link Examples -->
+    <div class="section">
+        <h3>External Links</h3>
+        <p>Here are some useful external links:</p>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+    </div>
+
+    <!-- Part 2: External Link and Button Example -->
+    <div class="section">
+        <h3>External Link and Button</h3>
+        <p>This is a button styled with CSS. Hover over it to see the effect.</p>
+        <button class="btn">Click Me!</button>
+    </div>
+
+</body>
+</html>
